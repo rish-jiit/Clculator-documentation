@@ -1,0 +1,29 @@
+Class calcs
+This class encapsulates various mathematical operations that can be performed on a single floating-point value.
+
+Function isOperator
+Checks if a given character is a recognized operator.
+
+bool isOperator(char a): Returns true if the character a is one of the operators (+-*/^aqcstCSTliL), otherwise returns false.
+
+Function doCalculus
+Performs calculations based on the given numbers and operators.
+
+float doCalculus(vector <float> numbers, vector <char> operators): Initializes a calcs object with the first number. Then iterates through the operators, applying the corresponding mathematical operation to the calcs object. The final result is returned as a float.
+
+Function help
+Displays a help message showing the usage of the calculator.
+
+void help(): Clears the screen and prints a help sheet with explanations of the operators and special functions available.
+
+Main Function
+The entry point of the program that handles user input and processes calculations.
+
+int main(): Initializes a console title, enters a loop to continuously accept user input, and performs the following tasks:
+
+Prompts the user for input.
+Checks if the input is a request for help (h).
+Parses the input string to separate numbers and operators.
+Handles special cases for P (π) and E (e).
+Calls doCalculus to compute the result and displays it.
+Pauses and clears the screen for the next calculation.
